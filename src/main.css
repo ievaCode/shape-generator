@@ -1,0 +1,200 @@
+body{
+    font-family: 'Gaegu', cursive;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url("img/pic11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 50px 0 50px 18%;
+}
+
+a {
+    color: #292929;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding:  5px 5% 5px 0;
+    }
+
+.active {
+    font-weight: 700;
+    border-radius: 5px;
+    color:  #62aa2c;
+    font-size: 36px;
+}
+
+table{
+    font-size: 24px;
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 10%;
+}
+
+th, td{
+    text-align: center;
+    padding: 10px;
+    align-content: center;
+    font-weight: 200;
+}
+
+th{
+    font-weight: 700;
+    color: #292929;
+}
+
+form{
+    margin-left: 18%;
+    font-family: 'Gaegu', cursive;
+}
+
+p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+select, input, button{
+    margin-top: 0;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 4px 10px;
+    width: 194px;
+    border-radius: 2px;
+}
+select{
+    font-family: 'Gaegu', cursive;
+    font-weight: 300;
+    border: 1px solid #b6b6b6;
+    box-shadow: inset 2px 2px #999999;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    width: 70px;
+    font-family: 'Gaegu', cursive;
+    font-weight: 300;
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 2px 2px #999999;
+    margin-right: 10px;
+}
+
+.color{
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    width: 194px;
+    height: 35px;
+    box-shadow: none;
+}
+
+::placeholder{
+    color: #999999;
+    font-family: 'Gaegu', cursive;
+    font-weight: 300;
+}
+
+button{
+    background: #62aa2c;
+    border-radius: 4px;
+    box-shadow: 4px 4px 2px #999999;
+    cursor: pointer;
+    font-family: 'Gaegu', cursive;
+    font-weight: 400;
+}
+
+button:active{
+    transform: translateY(3px);
+    box-shadow: 1px 1px 1px #999999;
+}
+
+button:focus {
+    outline: 0
+}
+
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-top: 30px solid #f4f4f4;
+    border-left: 30px solid transparent;
+    margin: auto;
+}
+
+.rectangle{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+.remover{
+    cursor: pointer;
+}
+
+.message {
+    font-size:36px;
+    height: 250px;
+    width: 250px;
+    line-height: 250px;
+    text-align: center;
+    background: #c5fc5c;
+    color: #000000;
+    position: fixed;
+    top:160px;
+    left: calc(18% + 250px);
+    animation-name: showmessage;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.calculator .message.triangle {
+    width: 0 ;
+    height: 0;
+    border-top: 250px solid #f4f4f4;
+    border-left: 250px solid transparent;
+    margin: auto;
+}
+
+.calculator .message.triangle span {
+    position: absolute;
+    bottom: -30px;
+    left: -230px;
+}
+
+
+@keyframes showmessage {
+    0%{
+        transform: translateX(1000px);
+    }
+    12.5%{
+        transform: translateX(0);
+    }
+    87.5%{
+        opacity:1;
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+        opacity:0;
+    }
+}

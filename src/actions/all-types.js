@@ -1,0 +1,3 @@
+export const ADD_SHAPE = 'ADD_SHAPE';
+export const REMOVE_SHAPE = 'REMOVE_SHAPE';
+export const REMOVE_ALL_SHAPES = 'REMOVE_ALL_SHAPES';
